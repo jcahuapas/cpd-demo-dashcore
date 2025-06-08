@@ -1,0 +1,59 @@
+1)
+
+Negocio: Clinica Veterinaria,
+Genera Objetivos claves para un dashboard, como mejorar la eficiencia operativa, aumentar los ingresos, etc.
+
+
+
+
+2)
+
+1) Análisis de Ingresos:
+
+Examina detalladamente las fuentes de ingresos actuales de la clínica. Identifica los servicios más rentables y aquellos que podrían mejorarse.
+Implementa estrategias para promover servicios de alto valor y ofrece paquetes o descuentos para servicios combinados.
+
+2) Análisis de Costos:
+
+Realiza un análisis detallado de los costos operativos. Identifica áreas donde se pueden reducir costos sin comprometer la calidad del servicio.
+Negocia con proveedores para obtener mejores tarifas en suministros y medicamentos.
+
+3) Análisis de Rentabilidad por Cliente:
+
+Realiza un análisis de rentabilidad por cliente para identificar a aquellos que generan mayores ingresos. Enfoca tus esfuerzos de marketing y atención en este segmento.
+
+4) Indicador: Porcentaje de ingresos provenientes de servicios especializados.
+
+PROMPT
+
+genera un script usando plotly.graph_objects y dash-bootstrap-components que muestra los siguientes indicadores 
+usa from dash import html
+usa from dash import dcc
+
+1.- En la primer fila, genera un grafico combinado  barras :donde pueda Examinar las fuentes de ingresos actuales de la clínica, muestra los servicios más rentables en el mismo  (usa datos aleatorios) en 12 meses. , grafico linea: linea punteada donde 
+muestre una constante promedio 
+2.- En la segunda fila, genera un grafico de lineas con markets que refleje los costos operativos (genera 3 tipos de costos operativos) en 12 meses
+
+3.- En la tercera Fila, genera un grafico de burbuja quue refleje un análisis de rentabilidad por 20 cliente para identificar a aquellos que generan mayores ingresos. Enfoca tus esfuerzos de marketing y atención en este segmento. en los ultmos 6 meses
+4.- .- En la tercera Fila, genera un grafico de donut quue refleje Porcentaje de ingresos provenientes de servicios especializados. (Rehabilitación Física para Mascotas, Odontología Veterinaria, Dermatología Veterinaria, Cardiología Veterinaria, Nutrición Especializada para Mascotas)
+
+
+
+Nro. 1: Genera de un script modelo un grafico para el Negocio
+
+con el siguiente script inventa un grafico que me ayude a mostrar otro indicador para una veterinaria relacionado a :
+Atencion al Cliente
+Finanzas
+
+import plotly.graph_objects as go
+
+fig = go.Figure()
+fig.add_trace(go.Scatter(x=[1, 2, 3, 4], y=[0, 2, 3, 5], fill='tozeroy')) # fill down to xaxis
+fig.add_trace(go.Scatter(x=[1, 2, 3, 4], y=[3, 5, 1, 7], fill='tonexty')) # fill to trace0 y
+
+fig.show()
+
+
+Nro 2:
+
+Con el siguiente script inventa un grafico que me ayude a mostrar otro indicador relacionado a la Atencion Al Cliente de una Clinica Veterinaria: 
